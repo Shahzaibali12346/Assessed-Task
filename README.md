@@ -64,3 +64,17 @@ The punctuation fix did not significantly change the NER results for PERSON, LOC
 The precision, recall, and F1 scores remained nearly the same before and after the fix.
 This suggests that punctuation wasn't a major issue in your original NER results for this dataset.
 
+Steps:
+Get data
+Identify NER
+Evaluate NER
+get result
+fix ner
+check if that changes result
+
+##USE OF AI
+Used chat gpt to correct codes and summarise key observations using prompts like:
+shorten these observations
+getting this directory error
+it does exist, but getting this when i try to move
+
