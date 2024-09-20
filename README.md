@@ -72,7 +72,7 @@ get result
 fix ner
 check if that changes result
 
-##USE OF AI
+## USE OF AI
 Used chat gpt to correct codes and summarise key observations using prompts like:
 shorten these observations
 getting this directory error
