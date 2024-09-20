@@ -39,3 +39,17 @@ LOCATION     0.5000   0.5000   0.5000   1     1     1
 ORGANIZATION 1.0000   0.5000   0.6667   1     0     1    
 Totals       0.6000   0.5000   0.5455   3     2     3 
 
+After Fixing the ner, the result i get is
+
+Entity       P        R        F1       TP    FP    FN   
+PERSON       0.5000   0.5000   0.5000   1     1     1    
+LOCATION     0.5000   0.5000   0.5000   1     1     1    
+ORGANIZATION 1.0000   0.5000   0.6667   1     0     1    
+Totals       0.6000   0.5000   0.5455   3     2     3 
+
+for the fandom wiki text, we get the following results
+
+(PERSON)     P: 0.1143 R: 0.1116 F1: 0.1129 TP: 24 FP: 186 FN: 191
+(LOCATION)   P: 0.1250 R: 0.1250 F1: 0.1250 TP: 6 FP: 42 FN: 42
+(ORGANIZATION) P: 0.0238 R: 0.0270 F1: 0.0253 TP: 1 FP: 41 FN: 36
+
