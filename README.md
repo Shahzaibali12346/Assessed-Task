@@ -47,9 +47,20 @@ LOCATION     0.5000   0.5000   0.5000   1     1     1
 ORGANIZATION 1.0000   0.5000   0.6667   1     0     1    
 Totals       0.6000   0.5000   0.5455   3     2     3 
 
+This signifies that te fixes made are not significant enough to change the result
+
 for the fandom wiki text, we get the following results
 
 (PERSON)     P: 0.1143 R: 0.1116 F1: 0.1129 TP: 24 FP: 186 FN: 191
 (LOCATION)   P: 0.1250 R: 0.1250 F1: 0.1250 TP: 6 FP: 42 FN: 42
 (ORGANIZATION) P: 0.0238 R: 0.0270 F1: 0.0253 TP: 1 FP: 41 FN: 36
+
+After fixing the ner result, i get this output:
+(ORGANIZATION) P: 0.0238 R: 0.0270 F1: 0.0253 TP: 1 FP: 41 FN: 36
+(PERSON)     P: 0.1143 R: 0.1116 F1: 0.1129 TP: 24 FP: 186 FN: 191
+(LOCATION)   P: 0.1250 R: 0.1250 F1: 0.1250 TP: 6 FP: 42 FN: 42
+
+The punctuation fix did not significantly change the NER results for PERSON, LOCATION, or ORGANIZATION entities in the fandom wiki dataset.
+The precision, recall, and F1 scores remained nearly the same before and after the fix.
+This suggests that punctuation wasn't a major issue in your original NER results for this dataset.
 
